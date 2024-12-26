@@ -9,6 +9,7 @@ let body = document.querySelector("body")
 let waitMessage = document.querySelector(".waitMessage")
 var scoreValue = 20;
 var highScoreValue = 0;
+
 let wt  = 0;
 var secretNumber = Math.floor((Math.random()*20)+1)
 console.log(secretNumber);
@@ -50,8 +51,7 @@ check.addEventListener("click", (e) => {
 })
 
 again.addEventListener("click", (e) => {
-    x();
-    
+    x();   
 })
 function x() {
     number.textContent = "?";
