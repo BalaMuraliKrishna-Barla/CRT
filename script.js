@@ -25,9 +25,9 @@ check.addEventListener("click", (e) => {
         message.textContent = "Hurray...!"
 
         waitMessage.hidden = false;
-        setInterval(()=> {
+        setTimeout(()=> {
             waitMessage.hidden = true;
-            //x();
+            x();
         },3000);
     }
     else if(guessedNumber > secretNumber) {
@@ -50,7 +50,10 @@ check.addEventListener("click", (e) => {
 })
 
 again.addEventListener("click", (e) => {
-    // x();
+    x();
+    
+})
+function x() {
     number.textContent = "?";
     guess.value = "0";
     message.textContent = "Start guessing...";
@@ -61,7 +64,4 @@ again.addEventListener("click", (e) => {
     console.log(secretNumber);
     check.disabled = false;
     check.style.backgroundColor = "#eee"
-})
-function x() {
-    
 }
