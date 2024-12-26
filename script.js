@@ -27,7 +27,7 @@ check.addEventListener("click", (e) => {
         waitMessage.hidden = false;
         setInterval(()=> {
             waitMessage.hidden = true;
-            x();
+            //x();
         },3000);
     }
     else if(guessedNumber > secretNumber) {
